@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mis</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+ <nav>
+   <h1>PICOGRAPHY</h1>
+   <div class="links" id="links">
+    <i class="fas fa-times" onclick="hideMenu()"></i>
+<ul>
+  <li><a href="#">Home</a></li>
+  <li><a href="#">photos</a></li>
+  <li><a href="#">Logo</a></li>
+  <li><a href="#">about</a></li>
+  <li><a href="#">connect us</a></li>
+  </ul>
+
+   </div>
+   <i class="fas fa-bars" onclick="showMenu()"></i>
+ </nav>
+<div class="maintext">
+<h2>Discover Billions oF amazing Photos in the world.</h2>
+<input class="search" type="search" placeholder=" search for photos ">
+</div>
+  </header>
+  <script>
+    var navlinks= document.getElementById("links")
+    function showMenu(){
+      navlinks.style.right="0";
+    }
+    function hideMenu(){
+      navlinks.style.right="-200px";
+      
+    }
+  </Script>
+  
+</body>
+</html>
